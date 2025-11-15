@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>One Page — Modern HTML/CSS/JS</title>
+  <meta name="description" content="A polished one-page website (HTML, CSS, JS) — no images, responsive, attractive." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <div class="brand">SparkOne</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact" class="btn-ghost">Contact</a></li>
+      </ul>
+      <button id="menuToggle" class="hamburger" aria-label="Toggle menu">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Built for Performance and Ease!</h1>
+          <p>Create modern, responsive pages with gradients, glassy cards and subtle motion.</p>
+          <div class="hero-actions">
+            <a href="#features" class="btn">See features</a>
+            <a href="#contact" class="btn btn-outline">Get in touch</a>
+          </div>
+        </div>
+
+        <aside class="card hero-card">
+          <h3>What's inside</h3>
+          <ul>
+            <li>Responsive layout</li>
+            <li>Accessible navigation</li>
+            <li>Animated micro-interactions</li>
+            <li>Easy to customize</li>
+          </ul>
+          <p class="muted">Drop this folder into a repo and publish with GitHub Pages.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+        <h2 class="section-title">Features</h2>
+        <div class="features-grid">
+          <div class="card">
+            <h4>Gradient design</h4>
+            <p>Soft multi-stop gradients for modern look and depth without images.</p>
+          </div>
+          <div class="card">
+            <h4>Responsive</h4>
+            <p>Looks great on mobile, tablet and desktop. Fluid typographic scale.</p>
+          </div>
+          <div class="card">
+            <h4>Accessible</h4>
+            <p>Keyboard-friendly navigation and semantic markup for screen readers.</p>
+          </div>
+          <div class="card">
+            <h4>Lightweight JS</h4>
+            <p>Small script for a few interactive pieces — lazy and simple.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section alt">
+      <div class="container about-grid">
+        <div>
+          <h2 class="section-title">About this template</h2>
+          <p>This one-page layout was built with clarity and customization in mind. No images needed — colors, spacing and subtle shadows do the heavy lifting.</p>
+          <p class="muted">Use it as a portfolio intro, product landing, assignment submission, or a clean personal landing page.</p>
+        </div>
+        <div>
+          <div class="stats">
+            <div><strong>1</strong><span>Page</span></div>
+            <div><strong>4</strong><span>Sections</span></div>
+            <div><strong>3</strong><span>Files</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <form id="contactForm" class="contact-form" onsubmit="return handleSubmit(event)">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required placeholder="Your name" />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required placeholder="you@example.com" />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="4" required placeholder="Say hello..."></textarea>
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="btn">Send message</button>
+            <button type="reset" class="btn btn-outline">Reset</button>
+          </div>
+          <p id="formStatus" class="muted" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> SparkOne • Built with HTML, CSS & JS • <a href="#home">Back to top</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
